@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Y.O.L.O.</title>
+<link href="https://bootswatch.com/darkly/bootstrap.min.css" rel="stylesheet">
+</head>
+<header align="center"><br><br>
+<img src="/assets/images/drizzy.png" height="auto" width="250px">
+</header>
+
+<style> 
+h1 {
+	font-size: 50px;
+}
+
+#tears {
+	font-size: 10px;
+	color: aqua;
+}
+
+</style>
+
+<body>
+
+<div class="text-center">
+	 
+	<h1>Drizzy Burgers!</h1>
+	<i id="tears">tears not included.</i><br>
+	{{!-- Make this red --}}
+
+	<br>
+	<div class="container">
+
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			{{!-- Empty --}}
+		</div>
+
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+				<form method="POST" action="/add" class="button-size">
+				<textarea class="form-control" rows="1" type="text" name="burger_name"></textarea><br>
+				<button type="submit" class="btn btn-danger btn-xl">Build your burger!</button>
+				</form>
+			</div>
+
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			{{!-- Empty --}}
+		</div>
+
+	</div>
+
+</div>
+
+<div>
+{{{body}}}
+{{!-- This remind me of Angular so hard. --}}
+</div>
+
+
+</body>
+</html>

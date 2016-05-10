@@ -1,0 +1,46 @@
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-6 text-center">
+			<h4 align="center">The Drizzy Burgers</h4>
+			<div class="row">
+			  {{#each burger}}
+			  	{{#unless this.devoured}}
+				
+					<div class="col-xs-7 text-center">
+
+					<h5 align="left">{{this.burger_name}}</h5>
+					
+					</div>
+					
+					<div class="col-xs-3 text-center">
+						<form method="POST" action="/devour?_method=PUT">
+							<button type="submit" name="burgerid" value={{this.id}} class="btn btn-danger btn-xs"><img src="assets/images/eat.gif" width="20px" height="auto"></button>
+						</form>
+					</div>
+				
+				{{/unless}}
+			  {{/each}}
+			</div>
+		</div>
+		
+		<div class="col-xs-6 text-center">
+			<h4 align="center">It's gone, cry about it!</h4>
+			  
+			  {{#each burger}}
+			  	{{#if this.devoured}}
+			  		<div class="col-xs-5 text-center">
+						<form method="POST" action="/another?_method=PUT">
+							<img height="auto" width="20px" src="assets/images/sadDrizzy.png">
+						</form>
+					</div>
+			  		
+			  		<h5 align="left">{{this.burger_name}}</h5>
+					
+					
+
+				{{/if}}
+			  {{/each}}
+		</div>
+	</div>
+</div>
