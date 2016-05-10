@@ -1,15 +1,9 @@
 {
   "name": "drizzy_burgers",
   "version": "1.0.0",
-  "description": "Drake Burgers app created with Node.js and MYSQL",
+  "description": "",
   "main": "server.js",
-  "dependencies": {
-    "body-parser": "^1.15.1",
-    "express-handlebars": "^3.0.0",
-    "method-override": "^2.3.5",
-    "mysql": "^2.10.2",
-    "require": "^2.4.20"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eric-h0/drizzyBurgers.git"
+    "url": "git+https://github.com/eric-h0/Drizzy-Burgers.git"
   },
   "author": "Eric Ho",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eric-h0/drizzyBurgers/issues"
+    "url": "https://github.com/eric-h0/Drizzy-Burgers/issues"
   },
-  "homepage": "https://github.com/eric-h0/drizzyBurgers#readme"
+  "homepage": "https://github.com/eric-h0/Drizzy-Burgers#readme"
 }
