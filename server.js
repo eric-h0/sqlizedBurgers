@@ -8,7 +8,7 @@ var methodOverride = require('method-override');
 var app = express();
 app.use(express.static(__dirname + '/public'));
 
-var PORT = process.env.PORT || 3000; 
+var PORT = process.env.PORT || 8080; 
 app.use(methodOverride('_method'));
 app.engine('handlebars', exphbs({
     defaultLayout: 'main'
