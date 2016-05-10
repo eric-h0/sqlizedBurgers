@@ -6,14 +6,6 @@ var mysql = require('mysql');
 
 var source = {
 
-    localhost: {
-        port: 3306,
-        host: 'localhost',
-        user: 'root',
-        password: "password",
-        database: "mcfymihhtx1v52rw"
-    },
-
     jawsDB: {
         port: 3306,
         host: 'l9dwvv6j64hlhpul.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
