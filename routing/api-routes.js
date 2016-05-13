@@ -17,6 +17,3 @@ module.exports = function(app){
         })
     });
 }
-
-
-// Yep
